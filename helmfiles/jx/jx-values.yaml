@@ -21,6 +21,7 @@ jxRequirements:
   cluster:
     chartRepository: http://bucketrepo.jx/bucketrepo/charts
     clusterName: kind
+    environmentGitOwner: Daniel888
     gitKind: github
     gitName: github
     gitServer: https://github.com
@@ -36,6 +37,8 @@ jxRequirements:
         enabled: false
         production: false
     key: dev
+    owner: Daniel888
+    repository: jx3-openshift-crc
   - ingress:
       domain: ""
       externalDNS: false
@@ -63,6 +66,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: Daniel888
   repository: bucketrepo
   secretStorage: local
   vault: {}
