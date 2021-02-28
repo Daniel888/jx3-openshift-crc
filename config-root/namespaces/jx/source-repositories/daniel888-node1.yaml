@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Daniel888
+    provider: github
+    repository: node1
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: daniel888-node1
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Daniel888/node1.git
+  org: Daniel888
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: node1
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Daniel888/node1

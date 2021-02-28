@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         Daniel888/jx3-openshift-crc: true
+        Daniel888/node1: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         Daniel888/jx3-openshift-crc: merge
+        Daniel888/node1: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - Daniel888/jx3-openshift-crc
+        - Daniel888/node1
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - Daniel888/jx3-openshift-crc
+        - Daniel888/node1
       target_url: http://dashboard-jx.apps-crc.testing
 kind: ConfigMap
 metadata:
